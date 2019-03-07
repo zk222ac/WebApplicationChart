@@ -1,0 +1,33 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "Charts";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div>
+    <h1> @ViewBag.Title</h1>
+    
+    <table>
+
+        <tr>
+            <th colspan="2" style="height: 100px; text-align: center">
+                <b>GDP DashBoard of Top Countries</b>
+
+            </th>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                <img src="@Url.Action("CreateCountryGDPBar")" />
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
